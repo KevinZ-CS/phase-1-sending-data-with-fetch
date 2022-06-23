@@ -34,7 +34,7 @@ describe( "submitData()", () => {
 
     let name = "Steve"
     let email = "steve@steve.com"
-
+    
     await submitData( name, email )
     expect( window.fetch, "A fetch to the API was not found" )
       .to.have.been.called.with( 'http://localhost:3000/users' );
